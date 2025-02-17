@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'p5hatty';
+    src: url(P5HATTY-1.TTF)
+}
+
+@font-face {
+    font-family: 'NewComicTitle';
+    src: url(NEWCOMICTITLE.TTF)
+}
+
+@font-face {
+    font-family: 'Gen1';
+    src: url(POKEMON_GENERATION.TTF)
+}
+
+@font-face {
+    font-family: 'EarwigFactory';
+    src: url(EARWIG\ FACTORY\ RG.OTF)
+}
+
+head {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+body {
+    /*flexbox stuff*/
+    display: flex;
+    flex-direction: column;
+    /*styling*/
+    color: white;
+    background-color: #031606;
+    /*text*/
+    font-size: 2.1vmax;
+    /*dimensions*/
+    width: 100%;
+    height: 100%;
+    /*spacing*/
+    margin: 0;
+    padding: 0;
+    
+}
+
+#navBarContainer {
+    position: sticky;
+    top: 0;
+    /*flexbox stuff*/
+    display: flex;
+    flex-direction: row;
+    /*styling*/
+    background-color: #22B14C;
+    /*dimensions*/
+    width: 87%;
+    height: 10vmin;
+    /*spacing*/
+    padding: .5vw 8% .5vw 5%;
+    float: left;
+    justify-content: center;
+}
+
+#navListContainer {
+    /*grid*/
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto;
+    grid-gap: 3%;
+    /*text*/
+    text-align: center;
+    font-size: 2.17vmax;
+    /*dimensions*/
+    width: 100%;
+    height: 100%;
+    /*spacing*/
+    margin: 0;
+    padding: 0;
+}
+
+.bar{
+    /*flexbox stuff*/
+    display: flex;
+    /*stylng*/
+    text-decoration: underline;
+    /*dimensions*/
+    width: 100%;
+    height: 100%;
+    /*spacing*/
+    float: left;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    /*spacing*/
+    margin-left: 0;
+}
+
+
+.container{
+    /*grid stuff*/
+    display: flex;
+    /*styling*/
+    background-color: black;
+    border: 1vmax solid yellow;
+    border-radius: 5vmin;
+    /*dimensions*/
+    width: 90vw;
+    /*spacing*/
+    margin-top: 7vw;
+    padding: 3vw 2vmax;
+    align-self: center;
+}
+
+.blogpostContainer{
+    /*styling*/
+    background-color: black;
+    
+}
+
+.blogImage {
+    width: 60%;
+    border-radius: 3vmin;
+}
+
+.blogpostContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articleP{
+    width: 70%;
+    background-color: red;
+    text-indent: 7%;
+    border-radius: 2vmin;
+    padding: 1vw;
+
+}
+
+.comicsContainer{
+    /*grid stuff*/
+    grid-template-columns: auto auto auto;
+    grid-gap: 2vmin;
+    /*styling*/
+    background-color: #5816df;
+    /*spacing*/
+    justify-content: space-evenly;
+    justify-self: center;
+}
+
+.comicBox {
+    /*styling*/
+    background-color: #22B14C;
+    border-radius: 5vmin;
+    /*dimensions*/
+    width: 22vw;
+    height: 22vw;
+    /*spacing*/
+    align-content: center;
+    text-align: center;
+}
+
+.devBox {
+    position: relative;
+    float: left;
+    /*spacing*/
+    top: -1.5vw;
+    left: 65vw;
+    z-index: -1;
+    /*dimensions*/
+    width: max-content;
+}
+
+.blobImage{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    left: 15vw;
+    top: -1.9vw;
+    rotate: 162deg;
+}
+
+.devText {
+    /*styling*/
+    position: absolute;
+    font-family: p5hatty;
+    text-align: center;    
+    /*dimensions*/
+    width: 15vw;
+    /*spacing*/
+}
+
+.navButton {
+    /*dimensions*/
+    margin: 2vmin 5vmax;
+    width: 13vmax;
+    height: 4vmax;
+    font: inherit;
+    outline: inherit;
+    border: none;
+    background: none;
+    color: white;
+    border-radius: 3vmin;
+}
+
+.comicsPageContainer{
+    gap: 2.7vw;
+}
+
+.coverImage{
+    /*dimensions*/
+    /*spacing*/
+    width: 25%;
+    height: auto;
+}
+
+.comicDescription{
+    width: 75%;
+    height: auto;
+}
+
+.descriptionBox{
+    display: flex;
+    height: 500px;
+    background: red;
+    margin: 0 3vw;
+    text-align: center;
+    align-items: center;
+}
+
+.descriptionBox>p{
+    
+}
+
+.infoBox{
+    width: 100%;
+    height: 30%;
+}
+.dateBox{
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 40%;
+    justify-content: left;
+    align-items: center;
+}
+.chapterBox {
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 40%;
+    justify-content: left;
+    align-items: center;
+}
+.linkBox{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    font-size: 2.7vmax;
+}
+
+/*
+navbar: #22B14C
+body: #031606
+*/
