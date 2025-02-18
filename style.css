@@ -26,6 +26,28 @@ head {
 body::-webkit-scrollbar{
     display: none;
 }
+
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    
+    color: inherit;
+}
+
+a:active{
+    text-decoration: none;
+    color: gainsboro;
+}
+
 body {
     /*flexbox stuff*/
     display: flex;
@@ -35,13 +57,15 @@ body {
     background-color: #031606;
     /*text*/
     font-size: 2.1vmax;
+    font-family: "Comic Sans MS";
     /*dimensions*/
     width: 100%;
     height: 100%;
     /*spacing*/
     margin: 0;
     padding: 0;
-    
+    margin-top: 0;
+    margin-bottom: 10vw;
 }
 
 #navBarContainer {
@@ -56,9 +80,10 @@ body {
     width: 87%;
     height: 10vmin;
     /*spacing*/
-    padding: .5vw 8% .5vw 5%;
+    padding: 0 8% 2vmin 5%;
     float: left;
     justify-content: center;
+
 }
 
 #navListContainer {
@@ -95,9 +120,12 @@ body {
 .logo {
     /*spacing*/
     margin-left: 0;
+    height: 12vmin;
 }
 
-
+.logo>img{
+height: 100%;
+}
 .container{
     /*grid stuff*/
     display: flex;
@@ -116,25 +144,27 @@ body {
 .blogpostContainer{
     /*styling*/
     background-color: black;
-    
+    justify-content: space-evenly;
+    justify-self: center;
 }
 
 .blogImage {
-    width: 60%;
+    height: 20vw;
     border-radius: 3vmin;
 }
 
 .blogpostContent{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .articleP{
     width: 70%;
-    background-color: red;
     text-indent: 7%;
-    border-radius: 2vmin;
+    border: 1vmin solid yellow;
+    border-radius: 5vmin;
     padding: 1vw;
 
 }
@@ -144,7 +174,6 @@ body {
     grid-template-columns: auto auto auto;
     grid-gap: 2vmin;
     /*styling*/
-    background-color: #5816df;
     /*spacing*/
     justify-content: space-evenly;
     justify-self: center;
@@ -213,7 +242,8 @@ body {
     /*dimensions*/
     /*spacing*/
     width: 25%;
-    height: auto;
+    height: 100%;
+    align-self: center;
 }
 
 .comicDescription{
@@ -223,18 +253,21 @@ body {
 
 .descriptionBox{
     display: flex;
-    height: 500px;
+    flex-direction: column;
+    height: 70%;
     background: red;
     margin: 0 3vw;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
-.descriptionBox>p{
-    
+.descriptionBox>h3{
+    text-decoration: underline;
 }
 
 .infoBox{
+    margin-top: 1vw;
     width: 100%;
     height: 30%;
 }
@@ -251,7 +284,7 @@ body {
     float: left;
     width: 50%;
     height: 40%;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
 }
 .linkBox{
@@ -264,6 +297,13 @@ body {
     font-size: 2.7vmax;
 }
 
+.bigImage{
+    display: flex;
+    width: auto;
+    height: 40vw;
+    justify-self: center;
+    align-self: center;
+}
 /*
 navbar: #22B14C
 body: #031606
