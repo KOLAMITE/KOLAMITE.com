@@ -163,6 +163,7 @@ height: 100%;
 .articleP{
     width: 70%;
     text-indent: 7%;
+    text-align: center;
     border: 1vmin solid yellow;
     border-radius: 5vmin;
     padding: 1vw;
